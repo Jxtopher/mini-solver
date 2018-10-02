@@ -34,7 +34,7 @@ class SolverOneMax : public Solver {
 
 	FirstImprovement<SolutionArray<unsigned int, bool> > algoFI(N, 400);
 
-        algoFI(s, eOneMax);
+	algoFI(s, eOneMax);
     }
 
     private:
