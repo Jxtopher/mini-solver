@@ -7,7 +7,7 @@
 // 
 
 #ifndef SOLVERONEMAX_H
-#define	SOLVERONEMAX_H
+#define SOLVERONEMAX_H
 
 #include "solver.h"
 
