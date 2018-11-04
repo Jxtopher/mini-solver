@@ -39,7 +39,7 @@ public:
 	}
 	
 	SolutionArray & operator=(SolutionArray const & s) {
-		Solution<TYPE_SOL>::operator=(s);
+		Solution<TYPE_FITNESS>::operator=(s);
 		if (_sizeArray != s._sizeArray) {
 			//this->~SolutionArray();
 			_sizeArray = s._sizeArray;
