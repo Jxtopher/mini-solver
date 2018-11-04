@@ -57,10 +57,9 @@ class FirstImprovement : public OptimizationAlgorithm<SOL> {
                     s(ret, 0);
                 else 
                     s(ret, 1);
+                s.fitness(0, fitnessBefore);
             }
-
-            e.full(s);
-
+            
             i++;
         }
 
