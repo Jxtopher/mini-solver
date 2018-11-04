@@ -56,9 +56,11 @@ public:
 	
 	void operator()(unsigned int const index, TYPE_SOL const value) {
 		assert(index < _sizeArray);
-		for (unsigned int i = 0 ; i < this->_numberOfObjective ; i++)
-			this->_fitnessIsValid[i] = false;
-		array[index] = value;
+		if (array[index] != value) {
+			for (unsigned int i = 0 ; i < this->_numberOfObjective ; i++)
+				this->_fitnessIsValid[i] = false;
+			array[index] = value;
+		}
 	}
 	
 	TYPE_SOL operator()(unsigned int const index) const {
