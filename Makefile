@@ -28,20 +28,20 @@ EXEC_NAME = mini-solver
 all : ./sources/main.cpp
 	$(CC) $(FLAGS) $< -o $(EXEC_NAME)
 
-buildOSX : ./sources/main.cpp
+build-osx : ./sources/main.cpp
 	$(CC) $(OSX_FLAGS) $< -o $(EXEC_NAME)
 
 run:
 	./$(EXEC_NAME)
 
-packagesDebian:
+packages-debian:
 	apt-get install g++ build-essential
 
-unitTest: ./unitTesting/main.cpp
+unit-test: ./unitTesting/main.cpp
 	$(CC) $(FLAGS) $< -o $(EXEC_NAME)_unitTest
 	./$(EXEC_NAME)_unitTest
 
-unitTestOSX: ./unitTesting/main.cpp
+unit-test-osx: ./unitTesting/main.cpp
 	$(CC) $(OSX_FLAGS) $< -o $(EXEC_NAME)_unitTest
 	./$(EXEC_NAME)_unitTest
 

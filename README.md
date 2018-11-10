@@ -13,7 +13,7 @@ make
 However if you use Mac OS X and some G++ flags don't exist, try:
 
 ```
-make buildOSX
+make build-osx
 ```
 
 # Run
@@ -29,11 +29,11 @@ make run
 To run the tests:
 
 ```
-make unitTest
+make unit-test
 ```
 
 However if you use Mac OS X and some G++ flags don't exist, try:
 
 ```
-make unitTestOSX
+make unit-test-osx
 ```
