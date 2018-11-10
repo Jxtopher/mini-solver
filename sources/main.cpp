@@ -28,7 +28,7 @@ void version(string name_software, string num_version) {
 
 int main() {
 	DEBUG_TRACE("Start of the program")
-	
+
 	SolverOneMax sOneMax;
 	sOneMax();
 
