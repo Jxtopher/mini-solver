@@ -78,7 +78,12 @@ class Solution {
 			return _numberOfObjective;
 		}
 		
-
+		friend std::ostream & operator << (std::ostream &out, const Solution<TYPE_FITNESS> &s) {
+			for (unsigned int i = 0 ; i < s.numberOfObjective() ; i++)
+				out << s.fitness(i);
+			return out;
+		}
+		
 	protected:
 		unsigned int _numberOfObjective;
 		TYPE_FITNESS *_fitness;
