@@ -78,7 +78,15 @@ public:
 		std::cout<<std::endl;
 	}
 	
-	
+	friend std::ostream & operator << (std::ostream &out, const SolutionArray<TYPE_FITNESS, TYPE_SOL> &s) {
+		for (unsigned int i = 0 ; i < s.numberOfObjective() ; i++)
+			out << s.fitness(i);
+		out <<" : ";
+		for (unsigned int i = 0 ; i < s.sizeArray() ; i++)
+			out<<s(i)<<" ";
+		return out;
+	}
+
 private:
 	TYPE_SOL *array;
 	unsigned int _sizeArray;
