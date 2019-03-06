@@ -1,7 +1,5 @@
 # Mini Solver
 
-Le meilleur, par Dr. Cricri
-
 # Build
 
 Simply run:
