@@ -1,7 +1,7 @@
 # Mini Solver
 
 # Build
-
+![Alt text](test.svg)
 Simply run:
 
 ```
