@@ -1,5 +1,7 @@
 # Mini Solver
 
+Made by the super tip top Dr. Cricri!
+
 # Build
 
 Simply run:
