@@ -33,7 +33,7 @@ public:
 		}
 	}
 	
-	~SolutionArray() {
+	virtual ~SolutionArray() {
 		DEBUG_TRACE("Delete SolutionArray");
 		delete[] array;
 	}

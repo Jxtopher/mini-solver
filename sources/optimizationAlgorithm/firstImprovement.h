@@ -24,7 +24,7 @@ class FirstImprovement : public OptimizationAlgorithm<SOL> {
         rid = new uniform_int_distribution<unsigned int>(0, N-1);
     }
 
-    ~FirstImprovement() {
+    virtual ~FirstImprovement() {
         delete rid;
     }
     

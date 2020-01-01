@@ -20,7 +20,7 @@ class EvalOneMax : public Evaluation<SOL> {
 
     }
     
-    ~EvalOneMax() {
+    virtual ~EvalOneMax() {
 
     }
 

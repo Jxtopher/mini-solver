@@ -52,7 +52,7 @@ class Solution {
 			return *this;
 		}
 		
-		~Solution() {
+		virtual ~Solution() {
 			DEBUG_TRACE("Delete Solution");
 			delete [] _fitness;
 			delete [] _fitnessIsValid;
