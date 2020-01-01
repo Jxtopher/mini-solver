@@ -5,7 +5,6 @@
 // @Version: *
 // @Purpose: *
 // 
-// test
 
 #include <iostream>
 #include <cstdlib>
