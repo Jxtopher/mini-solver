@@ -4,7 +4,7 @@
 // @Date: 2018-10
 // @Version: *
 // @Purpose: *
-//  teqst
+// 
 
 #include <iostream>
 #include <cstdlib>
