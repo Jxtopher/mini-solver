@@ -1,4 +1,22 @@
-language: C++
-compiler: gcc
-os:
-- linux
+#########################
+# project configuration #
+#########################
+language: cpp
+
+dist: trusty
+#sudo: required
+#group: edge
+
+###################
+# global settings #
+###################
+
+################
+# build matrix #
+################
+
+matrix:
+  - os: linux
+    compiler: gcc
+    env:
+      - COMPILER=g++-4.9
