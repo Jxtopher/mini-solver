@@ -19,4 +19,11 @@ matrix:
   - os: linux
     compiler: gcc
     env:
-      - COMPILER=g++-4.9
+      - COMPILER=g++-8
+
+################
+# build script #
+################
+
+script:
+  - make
