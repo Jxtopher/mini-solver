@@ -26,7 +26,7 @@ class Solution {
 			}
 		}
 		
-		Solution(unsigned int const &numberOfObjective): 
+		Solution(unsigned int const numberOfObjective): 
 			_numberOfObjective(numberOfObjective) {
 			DEBUG_TRACE("Creation Solution");
 			_fitness = new TYPE_FITNESS[_numberOfObjective];
