@@ -1,5 +1,7 @@
 # Mini Solver
 
+[![Build Status](https://travis-ci.org/Jxtopher/mini-solver.svg?branch=master)](https://travis-ci.org/Jxtopher/mini-solver)
+
 # Build
 
 Simply run:
