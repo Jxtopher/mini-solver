@@ -15,7 +15,7 @@ class OptimizationAlgorithm {
         OptimizationAlgorithm() {
 
         }
-        ~OptimizationAlgorithm() {
+        virtual ~OptimizationAlgorithm() {
 
         }
     

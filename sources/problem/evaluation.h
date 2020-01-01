@@ -16,7 +16,7 @@ public:
 
 	}
 
-	~Evaluation() {
+	virtual ~Evaluation() {
 
 	}
 	
