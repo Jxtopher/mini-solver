@@ -1,10 +1,6 @@
 # Mini Solver
 
-|Linux Build Status
-|Windows Build Status
-|OSS-Fuzz
-|Coverity Scan Build Status
-|License|
+|Linux Build Status |Windows Build Status |OSS-Fuzz |Coverity Scan Build Status |License|
 |:--:
 |:--:
 |:--:
