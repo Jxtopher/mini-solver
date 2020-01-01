@@ -5,7 +5,6 @@
 |OSS-Fuzz
 |Coverity Scan Build Status
 |License|
-
 |:--:
 |:--:
 |:--:
