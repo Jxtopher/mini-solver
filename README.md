@@ -1,7 +1,11 @@
 # Mini Solver
 
-[![Build Status](https://travis-ci.org/Jxtopher/mini-solver.svg?branch=master)](https://travis-ci.org/Jxtopher/mini-solver)
-[![Documentation](https://img.shields.io/badge/docs-doxygen-blue.svg)](http://nlohmann.github.io/json)
+Windows Build Status, OSS-Fuzz, Coverity Scan Build Status, License
+
+- **Linux Build Status** : [![Build Status](https://travis-ci.org/Jxtopher/mini-solver.svg?branch=master)](https://travis-ci.org/Jxtopher/mini-solver)
+- **Doc** : [![Documentation](https://img.shields.io/badge/docs-doxygen-blue.svg)](http://nlohmann.github.io/json)
+
+
 
 # Build
 
