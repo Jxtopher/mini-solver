@@ -4,9 +4,5 @@ jobs:
     docker:
       - image: buildpack-deps:trusty # primary container will run Ubuntu Trusty
     steps:
-      - run:
-          name: The First Step
-          command: |
-            echo 'Hello World!'
-            cd $(CIRCLE_WORKING_DIRECTORY)
-            make
+      - run: make
+            
