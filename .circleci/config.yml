@@ -3,7 +3,9 @@ jobs:
   build:
     docker:
       - image: buildpack-deps:trusty # primary container will run Ubuntu Trusty
+    working_directory: ~/project
     steps:
+      - checkout
       - run: 
           name: make
           command: make
