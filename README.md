@@ -5,7 +5,22 @@
 - **lgtm** : [![Language grade: C/C++](https://img.shields.io/lgtm/grade/cpp/g/Jxtopher/mini-solver.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Jxtopher/mini-solver/context:cpp)
 - **Doc** : [![Documentation](https://img.shields.io/badge/docs-doxygen-blue.svg)](http://nlohmann.github.io/json)
 
-
+<table align="center">
+    <thead>
+        <tr>
+            <th align="left">Column1</th>
+            <th align="center">Column1</th>
+            <th align="right">Column1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="left">Column1</td>
+            <td align="center">Column1</td>
+            <td align="right">Column1</td>
+        </tr>
+    </tbody>
+</table>
 
 # Build
 
