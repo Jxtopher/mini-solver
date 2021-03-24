@@ -63,10 +63,10 @@ endforeach()
 ###############################################################################
 # Globals tests
 ###############################################################################
-FIND_PROGRAM(PYTHON3.7_EXECUTABLE python3.7)
+FIND_PROGRAM(PYTHON_EXECUTABLE python)
 
 file(GLOB LIST_OF_FILES  tests-globals/*.py)
 foreach(PATH_FILE  ${LIST_OF_FILES})
     get_filename_component(FILE ${PATH_FILE} NAME)
-    add_test(NAME ${FILE} COMMAND ${PYTHON3.7_EXECUTABLE} ${PATH_FILE} "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}" WORKING_DIRECTORY ${PROJECT_SOURCE_DIR})
+    add_test(NAME ${FILE} COMMAND ${PYTHON_EXECUTABLE} ${PATH_FILE} "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}" WORKING_DIRECTORY ${PROJECT_SOURCE_DIR})
 endforeach()
