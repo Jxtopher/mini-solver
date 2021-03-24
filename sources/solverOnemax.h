@@ -27,18 +27,15 @@ class SolverOneMax : public Solver {
     }
 
     void operator()() {
-	unsigned int N = 100;
-	SolutionArray<unsigned int, bool> s(1, N);
-	
-	EvalOneMax<SolutionArray<unsigned int, bool> > eOneMax;
+        unsigned int N = 100;
+        SolutionArray<unsigned int, bool> s(1, N);
+        
+        EvalOneMax<SolutionArray<unsigned int, bool> > eOneMax;
 
-	FirstImprovement<SolutionArray<unsigned int, bool> > algoFI(N, 400);
+        FirstImprovement<SolutionArray<unsigned int, bool> > algoFI(N, 400);
 
-	algoFI(s, eOneMax);
+        algoFI(s, eOneMax);
     }
-
-    private:
-
 };
 
 #endif

@@ -10,6 +10,7 @@
 #define FIRSTIMPROVEMENT_H
 
 #include <random>
+#include <time.h>
 
 #include "optimizationAlgorithm.h"
 #include "../problem/evaluation.h"
@@ -20,7 +21,7 @@ template<class SOL>
 class FirstImprovement : public OptimizationAlgorithm<SOL> {
     public:
     FirstImprovement(unsigned int N, unsigned int buget) : _buget(buget) {
-        mt_rand.seed(static_cast<unsigned long int>(time(0)));
+        mt_rand.seed(static_cast<unsigned long int>(time(NULL)));
         rid = new uniform_int_distribution<unsigned int>(0, N-1);
     }
 
