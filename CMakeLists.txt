@@ -3,8 +3,9 @@
 # @License: *
 # @Date: 2020-11
 # @Version: 2
-# @Description: Makefile
+# @Description: CMakeLists.txt
 #
+# cmake .. -G "MinGW Makefiles"
 
 cmake_minimum_required(VERSION 3.12)
 
@@ -43,22 +44,23 @@ add_executable(${PROJECT_NAME} sources/main.cpp)
 # Unit tests
 ###############################################################################
 find_package(PkgConfig)
-pkg_check_modules(CPPUNIT cppunit) ## Cppunit
+pkg_check_modules(CPPUNIT cppunit)
 
-enable_testing()
-set(UNITTEST_TO_APPLY "tests/*.cpp")
+if (CPPUNIT_FOUND)
+    enable_testing()
+    set(UNITTEST_TO_APPLY "tests/*.cpp")
 
-file(GLOB_RECURSE ALL_SOURCE_FILES  ${UNITTEST_TO_APPLY})
-foreach (SOURCE_FILE ${ALL_SOURCE_FILES})
-    get_filename_component(NAME_FILE ${SOURCE_FILE} NAME_WE)
-    add_executable(${NAME_FILE} ${SOURCE_FILE})
-    target_link_libraries(${NAME_FILE} LINK_PRIVATE ${CPPUNIT_LIBRARIES})
-    target_include_directories(${NAME_FILE} PRIVATE 
-        "sources/"
-    )
-    add_test(NAME ${NAME_FILE} COMMAND ${NAME_FILE} WORKING_DIRECTORY ${PROJECT_SOURCE_DIR})
-endforeach()
-
+    file(GLOB_RECURSE ALL_SOURCE_FILES  ${UNITTEST_TO_APPLY})
+    foreach (SOURCE_FILE ${ALL_SOURCE_FILES})
+        get_filename_component(NAME_FILE ${SOURCE_FILE} NAME_WE)
+        add_executable(${NAME_FILE} ${SOURCE_FILE})
+        target_link_libraries(${NAME_FILE} LINK_PRIVATE ${CPPUNIT_LIBRARIES})
+        target_include_directories(${NAME_FILE} PRIVATE 
+            "sources/"
+        )
+        add_test(NAME ${NAME_FILE} COMMAND ${NAME_FILE} WORKING_DIRECTORY ${PROJECT_SOURCE_DIR})
+    endforeach()
+endif(CPPUNIT_FOUND)
 
 ###############################################################################
 # Globals tests
